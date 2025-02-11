@@ -15,17 +15,17 @@
      stroke-width="15"
      id="g2"
      transform="matrix(1,0,0,-1,0,200)">
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round"
+       id="path3"
+       cx="100"
+       cy="100"
+       r="92.5" />
     <path
        d="M 99.395,168.899 39.45,65.33 161.164,66.36 99.394,168.9 Z"
        stroke-linecap="round"
        stroke-linejoin="round"
        id="path2" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round"
-       id="path3"
-       cx="100"
-       cy="100"
-       r="92.5" />
     <rect
        style="fill:#000000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
        id="rect1"
