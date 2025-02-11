@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"en/Home.md","permalink":"/en/home/","tags":["gardenEntry"],"created":"2025-02-11T14:57:13.890+01:00","updated":"2025-02-11T16:08:10.325+01:00"}
+{"dg-publish":true,"dg-path":"en/Home.md","permalink":"/en/home/","tags":["gardenEntry"],"created":"2025-02-11T14:57:13.890+01:00","updated":"2025-02-11T16:23:42.374+01:00"}
 ---
 
 
@@ -12,6 +12,9 @@
 - Dungeons and Spiders 
 - The Snow Globe
 - The Cross Alley
+
+### World
+[[7 Task/files/7 Worlds/762 Amasia/publish/en/world/cosmology/Cosmology\|Cosmology]]
 
 ## For game master
 > [!WARNING] Spoilers ahead
