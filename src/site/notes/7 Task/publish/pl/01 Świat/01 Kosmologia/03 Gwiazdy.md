@@ -1,106 +1,181 @@
 ---
-{"dg-publish":true,"dg-path":"pl/01 Świat/01 Kosmologia/03 Gwiazdy.md","permalink":"/pl/01-swiat/01-kosmologia/03-gwiazdy/","created":"2025-02-26T17:09:46.476+01:00","updated":"2025-02-26T17:53:52.554+01:00"}
+{"dg-publish":true,"dg-path":"pl/01 Świat/01 Kosmologia/03 Gwiazdy.md","permalink":"/pl/01-swiat/01-kosmologia/03-gwiazdy/","created":"2025-02-26T17:09:46.476+01:00","updated":"2025-02-26T18:39:17.470+01:00"}
 ---
 
 
-![constellations.png](/img/user/7%20Task/files/7%20Worlds/762%20Amasia/7621%20Cosmology/76212%20Moons/constellations.png)
+Badania nad gwiazdami w Amazji są ograniczone, gdyż blask trzech księżyców często utrudnia obserwowanie dalekich świateł. Mimo to, przez pokolenia uczeni i marzyciele wytyczali wzory wśród gwiazd, nadając im imiona i przypisując znaczenie w wierzeniach i astrologii. Choć wiedza o nich pozostaje fragmentaryczna, niektórzy wciąż próbują odkryć ich tajemnice, wierząc, że kryją one klucz do przyszłości, magii lub dawnych cykli świata.
 
-Świeca
-( Lucerna) ( Kerti) ( Shammah)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+## Konstelacje
+![constellations-2.png](/img/user/7%20Task/files/7%20Worlds/762%20Amasia/7621%20Cosmology/76212%20Moons/constellations-2.png)
 
-Wiewiórka
-( Sciurus) ( Stjarnufiskr) ( Al-ǧarbiyy)
-[pozytywne]: Zaciekłość, odwaga i ochrona
-[negatywne]: Zaciekłość, odwaga i ochrona
+### Świeca (1)
+_Lucerna / Kerti / Shammah_
+Skojarzenia:
+	- Oświecenie, mądrość, przewodnictwo  
+	- Zgubne iluzje, ślepe podążanie, zagubienie
 
-Most
-( Pontem) ( Brú) ( Jisr)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Most (2)
+_Pontem / Brú / Jisr_
+Skojarzenia:
+	- Połączenie, harmonia, porozumienie  
+	- Przepaść, zerwanie więzi, rozłam
 
-Latarnia
-( Lumina) ( Ljós) ( Fanus)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Wiewiórka (3)
+_Sciurus / Stjarnufiskr / Al-ǧarbiyy_
+Skojarzenia:
+	- Pracowitość, spryt, przystosowanie  
+	- Nadmierna podejrzliwość, chciwość
 
-Ogień
-( Ignis) ( Eldr) ( Nar)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Latarnia (4)
+_Lumina / Ljós / Fanus_
+Skojarzenia:
+	- Nadzieja, nawigacja, bezpieczeństwo  
+	- Fałszywa droga, zwodzenie, złudne bezpieczeństwo
 
-Ara
-( Mascarene) ( Apa) ( Al-bibġā')
-[pozytywne]: Zaciekłość, odwaga i ochrona
-[negatywne]: Zaciekłość, odwaga i ochrona
+### Ogień (5)
+_Ignis / Eldr / Nar_
+Skojarzenia:
+	- Pasja, odrodzenie, siła twórcza  
+	- Zniszczenie, chaos, brak kontroli
 
-Sztylet
-( Pugione) ( Skeggöx) ( Khunjar)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Zaciekłość, zamknięcie i ograniczenie
+### Ara (6)
+_Mascarene / Apa / Al-bibġā'_
+Skojarzenia:
+	- Wolność, komunikacja, inteligencja  
+	- Plotki, oszustwo, hałas
 
-Zegar
-( Horologium) ( Klukka) ( Sa'ah)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Sztylet (7)
+_Pugione / Skeggöx / Khunjar_
+Skojarzenia:
+	- Precyzja, szybkość, determinacja  
+	- Zdrada, podstęp, niebezpieczeństwo
 
-Mewa
-( Larus) ( Selr) ( Na'uris al-baḥr)
-[pozytywne]: Zaciekłość, odwaga i ochrona
-[negatywne]: Zaciekłość, odwaga i ochrona
+### Zegar (8)
+_Horologium / Klukka / Sa'ah_
+Skojarzenia:
+	- Cierpliwość, cykle, przeznaczenie  
+	- Pośpiech, lęk przed upływem czasu, przemijanie
 
-Róg
-( Cornu) ( Hörn) ( Qarn)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Zaciekłość, zamknięcie i ograniczenie
+### Mewa (9)
+_Larus / Selr / Na'uris al-baḥr_
+Skojarzenia:
+	- Wolność, intuicja, podróże  
+	- Niestabilność, zagubienie, niespokojny duch
 
-Wschodnia włócznia
-( Orientalis Lancea) ( Austri Spjót) ( Sharqi Ramh)
-[pozytywne]: Połączenie, przejście i jedność
-[negatywne]: Odłączenie, podział i separacja
+### Róg (10)
+_Cornu / Hörn / Qarn_
+Skojarzenia:
+	- Siła, sygnał, wezwanie do działania  
+	- Przymus, przemoc, ślepe posłuszeństwo
 
-Sum
-( Silurus) ( Skjaldlítr) ( Samak al-qannādis)
-[pozytywne]: Zaciekłość, odwaga i ochrona
-[negatywne]: Zaciekłość, odwaga i ochrona
+### Sum (11)
+_Silurus / Skjaldlítr / Samak al-qannādis_
+Skojarzenia:
+	- Cierpliwość, wytrzymałość, adaptacja  
+	- Ospałość, bierność, brak inicjatywy
 
-Cholera
-( Couldron) ( Galdur) ( Wa')
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Wschodnia Włócznia (12)
+_Orientalis Lancea / Austri Spjót / Sharqi Ramh_
+Skojarzenia:
+	- Ochrona, obrona, honor  
+	- Podział, agresja, wojna
 
-Płatek
-( Laminae) ( Blómblað) ( Batl)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Kocioł (13)
+_Cauldron / Galdur / Wa'_
+Skojarzenia:
+	- Przemiana, tworzenie, alchemia  
+	- Nieprzewidywalność, ryzyko, klątwa
 
-Gołąb
-( Columba) ( Dreki) ( Ḥamāma)
-[pozytywne]: Zaciekłość, odwaga i ochrona
-[negatywne]: Zaciekłość, odwaga i ochrona
+### Płatek (14)
+_Laminae / Blómblað / Batl_
+Skojarzenia:
+	- Delikatność, piękno, ulotność  
+	- Nietrwałość, słabość, łatwość zniszczenia
 
-Mała włócznia
-(Minima Lancea) (Litil Spjót) (Sagheer Jiddan Ramh)
-[pozytywne]: Oczyszczanie, odświeżenie i porządek
-[negatywne]: Zamiatanie, zniszczenie i chaos
+### Gołąb (15)
+_Columba / Dreki / Ḥamāma_
+Skojarzenia:
+	- Pokój, harmonia, posłaniec dobrych wieści  
+	- Naiwność, uległość, brak czujności
 
-Mały krzyż
-(Parvus Crucis) (Lítill Kross) (Sagheer Salib)
-[pozytywne]: Kierunek, cel i determinacja
-[negatywne]: Wrogość, niebezpieczeństwo i krzywda
+### Mała Włócznia (16)
+_Minima Lancea / Litil Spjót / Sagheer Jiddan Ramh_
+Skojarzenia:
+	- Oczyszczanie, sprawiedliwość, uporządkowanie  
+	- Nadmierna surowość, bezwzględność
 
-Hełm
-(Galeam) (Hjálmr) (Khudzah)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Mały Krzyż (17)
+_Parvus Crucis / Lítill Kross / Sagheer Salib_
+Skojarzenia:
+	- Przewodnictwo, wiara, stabilność  
+	- Fanatyzm, podziały, zamknięcie się na inne drogi
 
-Wazon
-(Wazon) (Brzeg) ('Ina')
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Hełm (18)
+_Galeam / Hjálmr / Khudzah_
+Skojarzenia:
+	- Ochrona, strategia, rozwaga  
+	- Izolacja, unikanie konfliktu, lęk
 
-Młot
-( Malleus) ( Hamar) ( Matraqah)
-[pozytywne]: Transport, podróż i mobilność
-[negatywne]: Stagnacja, zamknięcie i ograniczenie
+### Wazon (19)
+_Vasum / Brzeg / Ina_
+Skojarzenia:
+	- Przechowywanie, tradycja, kontemplacja  
+	- Rutyna, zamknięcie, ograniczenie
+
+### Młot (20)
+_Malleus / Hamar / Matraqah_
+Skojarzenia:
+	- Tworzenie, siła, wytrwałość  
+	- Niszczenie, niekontrolowana agresja, brutalność
+
+### Księga (21)
+_Liber / Bók / Kitāb_
+Skojarzenia:
+	- Wiedza, mądrość, poszukiwanie prawdy  
+	- Fanatyzm, zamknięcie w dogmatach, ignorancja
+
+### Klucz (22)
+_Clavis / Lykill / Miftāḥ_
+Skojarzenia:
+	- Otwieranie nowych dróg, tajemnice, przeznaczenie  
+	- Zatrzaśnięcie drzwi, utracone szanse, ukryte zagrożenia
+
+![constellations-3.png](/img/user/7%20Task/files/7%20Worlds/762%20Amasia/7621%20Cosmology/76212%20Moons/constellations-3.png)
+
+## Najjaśniejsze Gwiazdy
+### 1. Zahira (Jaśniejąca)
+_Zahira / Blómstjarna / Lux Prima_  
+Najjaśniejsza gwiazda na niebie Amazji, widoczna przez cały rok. Uważana za przewodnika wędrowców i symbol błogosławieństwa bogów.
+Skojarzenia:
+	- Nadzieja, przewodnictwo, boska opatrzność  
+	- Pycha, iluzja, ślepa wiara  
+
+### 2. Veydris (Wieczny Płomień)
+_Veydris / Eldstjarna / Ignis Aeternum_  
+Czerwonawy olbrzym, który nigdy nie gaśnie, nawet w burzowe noce. Legendy mówią, że to serce upadłego boga ognia, które nadal bije w pustce.
+Skojarzenia:
+	- Pasja, siła, nieśmiertelność  
+	- Gniew, destrukcja, obsesja  
+
+### 3. Naqis (Złamana)
+_Naqis / Skuggstjarna / Fracta_  
+Gwiazda, której jasność zmienia się nieregularnie, jakby wciąż próbowała odzyskać swój dawny blask. Uważana za zwiastun wielkich zmian.
+Skojarzenia:
+	- Nowe początki, pokora, adaptacja  
+	- Strata, nostalgia, niedokończone sprawy  
+
+### 4. Thal’vir (Lodowy Strażnik)
+_Thal’vir/ Ísstjarna / Gelida Lux_
+Blada, niemal srebrzysta gwiazda, najlepiej widoczna w zimowych miesiącach. Uznawana za symbol samotników i tych, którzy przetrwali największe trudności w życiu.
+
+Skojarzenia:
+	- Wytrwałość, spokój, niezależność
+	- Chłód, dystans, brak empatii
+
+### 5. Orzuun (Zwiastun Pustki)
+_Orzuun / Þrumustjarna / Vox Vacui_  
+Położona na skraju widzialnych gwiazd, Orzuun symbolizuje granicę między znanym a nieznanym. Niektórzy twierdzą, że w jej blasku można odnaleźć odpowiedzi, inni zaś wierzą, że prowadzi ku samotności bez końca.
+
+Skojarzenia:
+	- Spokój, kontemplacja, równowaga
+	- Izolacja, zapomnienie, utrata więzi
