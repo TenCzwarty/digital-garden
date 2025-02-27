@@ -1,13 +1,48 @@
-body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+body,
+body .callout {
+  font-family: "EB Garamond" !important;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body .callout-title {
+  font-family: "EB Garamond" !important;
+  font-variant: small-caps !important;
+  font-weight: 800 !important;
+}
+
+body .callout-title {
+  font-size: 20px !important;
+}
+
+body iframe {
+  max-width: 100%;
+}
+
+body .lucide {
+  transform: scale(0.8);
+}
+
+body .backlink-card {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+body .notelink.active-note {
+  transform: none !important;
+}
+
+body #tooltip-content {
+  margin-top: -10px;
+}
+
+body #tooltip-content > div:first-child {
+  display: none;
 }
