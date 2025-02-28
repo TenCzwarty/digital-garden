@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"],"created":"2025-02-11T15:55:33.967+01:00","updated":"2025-02-28T13:35:16.618+01:00"}
+{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"],"created":"2025-02-11T15:55:33.967+01:00","updated":"2025-02-28T13:39:57.193+01:00"}
 ---
 
 
@@ -14,9 +14,9 @@
 - Aleja Krzyży
 
 #### [[7 Task/publish/pl/1. Świat/Świat\|Świat]]
-- [[7 Task/publish/pl/1. Świat/01 Kosmologia/01 Planeta\|Planeta]]
-- [[7 Task/publish/pl/1. Świat/01 Kosmologia/02 Księżyce\|Księżyce]]
-- [[7 Task/publish/pl/1. Świat/01 Kosmologia/03 Gwiazdy\|Gwiazdy]]
+- [[7 Task/publish/pl/1. Świat/1. Kosmologia/1. Planeta\|Planeta]]
+- [[7 Task/publish/pl/1. Świat/1. Kosmologia/2. Księżyce\|Księżyce]]
+- [[7 Task/publish/pl/1. Świat/1. Kosmologia/3. Gwiazdy\|Gwiazdy]]
 
 ### Dla Mistrza Gry
 > [!WARNING] Uwaga na spojlery
