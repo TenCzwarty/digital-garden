@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"],"updated":"2025-03-03T15:07:00.376+01:00"}
+{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"],"updated":"2025-03-03T16:05:01.827+01:00"}
 ---
 
 
@@ -19,7 +19,7 @@
 - [[7 Task/publish/pl/1. Świat/1. Kosmologia/3. Gwiazdy\|Gwiazdy]]
 
 ## Dla Mistrza Gry
-> [!WARNING] Uwaga na spojlery
+> [!NOTE] Uwaga na spojlery
 > Jeśli jesteś jednym z moich graczy, skorzystaj z sekcji „Dla Graczy”, aby uniknąć spoilerów.
 
 ## Inne
