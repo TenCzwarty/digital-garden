@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"pl/1. Świat/3. Geografia/1. Kontynent/Kontynent.md","permalink":"/pl/1-swiat/3-geografia/1-kontynent/kontynent/","created":"2025-02-28T13:45:32.342+01:00","updated":"2025-02-28T13:47:33.472+01:00"}
+{"dg-publish":true,"dg-path":"pl/1. Świat/3. Geografia/1. Kontynent/Kontynent.md","permalink":"/pl/1-swiat/3-geografia/1-kontynent/kontynent/","updated":"2025-02-28T13:47:33.472+01:00"}
 ---
 
 

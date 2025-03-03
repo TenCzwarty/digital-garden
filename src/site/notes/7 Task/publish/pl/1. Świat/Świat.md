@@ -1,10 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"pl/1. Świat/Świat.md","permalink":"/pl/1-swiat/swiat/","created":"2025-02-26T17:05:36.327+01:00","updated":"2025-02-28T13:39:50.050+01:00"}
+{"dg-publish":true,"dg-path":"pl/1. Świat/Świat.md","permalink":"/pl/1-swiat/swiat/","updated":"2025-03-03T15:06:51.827+01:00"}
 ---
 
 
-## Witaj w świecie Amazji!
-
+# Witaj w świecie Amazji!
 Amazja jest fantastyczną krainą pełna magii, zamieszkałą nie tylko przez ludzi, ale także elfy, krasnoludy, gnomy, i inne przedziwne stwory, które od tysiącleci toczą wojny w rytm [[7 Task/publish/pl/1. Świat/1. Kosmologia/2. Księżyce\|krążących wokół planety księżyców]].
 
 Jest to niebezpieczny świat pełen zagadek, tajemnic, oraz niezwykłych przygód.
