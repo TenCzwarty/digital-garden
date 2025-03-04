@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"],"updated":"2025-03-03T16:05:01.827+01:00"}
+{"dg-publish":true,"dg-path":"pl/Index.md","permalink":"/pl/index/","tags":["gardenEntry"]}
 ---
 
 
@@ -9,7 +9,7 @@
 
 ## Dla Graczy
 ### Przygody
-- Lochy i Pająki
+- Amulet Perspektyw
 - Śnieżna Kula
 - Aleja Krzyży
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"en/Index.md","permalink":"/en/index/","updated":"2025-02-28T13:37:51.329+01:00"}
+{"dg-publish":true,"dg-path":"en/Index.md","permalink":"/en/index/"}
 ---
 
 

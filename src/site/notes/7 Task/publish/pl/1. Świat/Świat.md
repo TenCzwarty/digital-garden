@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"pl/1. Świat/Świat.md","permalink":"/pl/1-swiat/swiat/","updated":"2025-03-03T15:06:51.827+01:00"}
+{"dg-publish":true,"dg-path":"pl/1. Świat/Świat.md","permalink":"/pl/1-swiat/swiat/"}
 ---
 
 
@@ -10,7 +10,7 @@ Jest to niebezpieczny świat pełen zagadek, tajemnic, oraz niezwykłych przygó
 
 Historia Amazji sięga poza granice pamięci – najstarsze kroniki wspominają wydarzenia sprzed 11 000 lat, lecz nawet one są jedynie cieniem tego, co było wcześniej. Jakie sekrety skrywają jej ziemie, niebo i morza? Jakie siły ukształtowały jej los?
 
-> [!EXAMPLE] Czytaj dalej: [[7 Task/publish/pl/1. Świat/1. Kosmologia/1. Planeta\|Planeta]]
+> [!NOTE] Czytaj dalej: [[7 Task/publish/pl/1. Świat/1. Kosmologia/1. Planeta\|Planeta]]
 
 > [!TIP] Szybkie Fakty
 > - świat Amazji składa się z 1 superkontynentu, otoczonego oceanami ze wszystkich stron
