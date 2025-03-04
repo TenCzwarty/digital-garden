@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import "./fonts.scss";
 
 :root {
   --HB_Color_Background: #eee5ce;
@@ -24,10 +25,11 @@
 }
 
 // RESET
-main :is(div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a) {
-  margin: 0;
-  padding: 0;
-  border: 0;
+:is(main, #tooltip-wrapper)
+  :is(div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a) {
+  margin: initial;
+  padding: initial;
+  border: initial;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -39,14 +41,7 @@ h4 {
   color: #58180d;
 }
 
-input[type="range"] {
-  accent-color: #58180d;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  margin-top: 0px;
-}
-
+// ASIDE
 aside .sidebar-container {
   padding: 8px;
 }
@@ -54,6 +49,11 @@ aside .toc-container,
 aside .backlink-list {
   border-left: none;
   margin: 0;
+}
+aside .toc,
+aside .backlinks {
+  margin-top: 0px;
+  padding: 0;
 }
 aside div.graph,
 aside div.toc,
@@ -67,17 +67,35 @@ aside div.backlinks {
   border-image-outset: 4px !important;
   box-shadow: 0 0 6px #faf7ea !important;
 }
+aside div.toc,
+aside .backlinks {
+  margin-top: 20px;
+}
 aside .toc > ol {
   margin: 0;
 }
-
+aside .graph .graph-title,
+aside .toc-title-container .toc-title,
+aside .backlinks .backlink-title {
+  margin: 0 !important;
+  font-family: "ScalySansRemake" !important;
+  padding: 0.5em 0.5em !important;
+  font-size: 1rem !important;
+  font-variant: small-caps !important;
+}
+aside .backlinks .backlink-title {
+  position: relative;
+  top: -4px;
+}
+aside .toc-title-container {
+  margin-bottom: -4px;
+}
+aside .backlink-list {
+  margin-top: -8px;
+}
 aside .sidebar .graph {
   min-height: unset;
 }
-aside .backlinks {
-  margin: 0;
-}
-
 aside .backlink-card {
   display: flex;
   align-items: center;
@@ -88,18 +106,65 @@ aside .graph .graph-title-container {
 aside #link-graph {
   margin: 0;
 }
+@media (max-width: 1400px) {
+  aside .sidebar {
+    display: block;
+    border-top: none !important;
+  }
+  aside .backlinks {
+    margin-top: 0px !important;
+  }
+}
+#graph-controls {
+  top: 100%;
+  left: 0;
+  padding: 0 0.5em !important;
+  .depth-control {
+    align-items: center !important;
+  }
+  #graph-depth {
+    margin: 6px 0 0 0 !important;
+  }
+  #depth-display {
+    margin: 0 !important;
+  }
+  #depthmarkers {
+    display: none !important;
+  }
+  #graph-fs-btn {
+    margin-right: 0 !important;
+  }
+  .ctrl-right {
+    margin: 6px 0 0 0 !important;
+  }
+}
+aside nav.toc {
+  padding: 0 0.5em !important;
+}
+
+input[type="range"] {
+  accent-color: #58180d;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: 0px;
+}
 
 body {
   --font-text-override: "EB Garamond";
   --font-editor-override: "EB Garamond";
   --font-default: "EB Garamond";
 }
-
+#tooltip-content div:first-child {
+  display: none;
+}
 .callout[data-callout] {
   --callout-color: 0, 0, 0;
   --callout-icon: unset;
 }
-
+main.content {
+  max-width: 660px;
+}
 body .lucide {
   transform: scale(0.8);
 }
@@ -121,48 +186,47 @@ body iframe {
 body {
   background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg") !important;
 }
-main {
+:is(main, #tooltip-wrapper) {
   font-size: 0.34cm !important;
 }
-main p {
+:is(main, #tooltip-wrapper) p {
   line-height: 1.25em !important;
 }
-main p + * {
+:is(main, #tooltip-wrapper) p + * {
   margin-top: 0.325cm !important;
 }
-main p + p {
+:is(main, #tooltip-wrapper) p + p {
   margin-top: 0 !important;
 }
-main ul {
+:is(main, #tooltip-wrapper) ul {
   padding-left: 1.4em !important;
   margin-bottom: 0.8em !important;
   line-height: 1.25em !important;
 }
-main ol {
+:is(main, #tooltip-wrapper) ol {
   padding-left: 1.4em !important;
   margin-bottom: 0.8em !important;
   line-height: 1.25em !important;
 }
-main p + p,
-main ul + p,
-main ol + p {
+:is(main, #tooltip-wrapper) p + p,
+:is(main, #tooltip-wrapper) ul + p,
+:is(main, #tooltip-wrapper) ol + p {
   text-indent: 1em !important;
 }
-main img {
+:is(main, #tooltip-wrapper) img {
   z-index: -1 !important;
 }
-main strong {
+:is(main, #tooltip-wrapper) strong {
   font-weight: bold !important;
   letter-spacing: -0.02em !important;
 }
-main h1,
-main h2,
-main h3,
-main h4 {
-  // font-family: "MrEavesRemake" !important;
+:is(main, #tooltip-wrapper) h1,
+:is(main, #tooltip-wrapper) h2,
+:is(main, #tooltip-wrapper) h3,
+:is(main, #tooltip-wrapper) h4 {
   color: var(--HB_Color_HeaderText) !important;
 }
-main h1 {
+:is(main, #tooltip-wrapper) h1 {
   margin-bottom: 0.18cm !important;
   column-span: all !important;
   font-size: 0.89cm !important;
@@ -170,10 +234,10 @@ main h1 {
   -webkit-column-span: all !important;
   -moz-column-span: all !important;
 }
-main h1 + .callout {
+:is(main, #tooltip-wrapper) h1 + .callout {
   margin: 0.58cm 0 !important;
 }
-main h1 + p::first-letter {
+:is(main, #tooltip-wrapper) h1 + p::first-letter {
   float: left !important;
   padding-bottom: 2px !important;
   padding-left: 40px !important;
@@ -193,111 +257,111 @@ main h1 + p::first-letter {
   -webkit-background-clip: text !important;
   background-clip: text !important;
 }
-main h1 + p::first-line {
+:is(main, #tooltip-wrapper) h1 + p::first-line {
   font-variant: small-caps !important;
 }
-main h2 {
+:is(main, #tooltip-wrapper) h2 {
   font-size: 0.75cm !important;
   line-height: 0.988em !important;
 }
-main h3 {
+:is(main, #tooltip-wrapper) h3 {
   font-size: 0.575cm !important;
   line-height: 0.995em !important;
   border-bottom: 2px solid var(--HB_Color_HeaderUnderline) !important;
 }
-main h3 + * {
+:is(main, #tooltip-wrapper) h3 + * {
   margin-top: 0.17cm !important;
 }
-main * + h3 {
+:is(main, #tooltip-wrapper) * + h3 {
   margin-top: 0.155cm !important;
 }
-main h4 {
+:is(main, #tooltip-wrapper) h4 {
   font-size: 0.458cm !important;
   line-height: 0.971em !important;
 }
-main h4 + * {
+:is(main, #tooltip-wrapper) h4 + * {
   margin-top: 0.09cm !important;
 }
-main * + h4 {
+:is(main, #tooltip-wrapper) * + h4 {
   margin-top: 0.235cm !important;
 }
-main h5 {
+:is(main, #tooltip-wrapper) h5 {
   font-family: "ScalySansSmallCapsRemake" !important;
   font-size: 0.423cm !important;
   line-height: 0.951em !important;
 }
-main h5 + * {
+:is(main, #tooltip-wrapper) h5 + * {
   margin-top: 0.2cm !important;
 }
-main table {
+:is(main, #tooltip-wrapper) table {
   font-family: "ScalySansRemake" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
   line-height: 16px !important;
 }
-main table p,
-main table dl,
-main table ul,
-main table ol {
+:is(main, #tooltip-wrapper) table p,
+:is(main, #tooltip-wrapper) table dl,
+:is(main, #tooltip-wrapper) table ul,
+:is(main, #tooltip-wrapper) table ol {
   line-height: 1.2em !important;
 }
-main table ul,
-main table ol {
+:is(main, #tooltip-wrapper) table ul,
+:is(main, #tooltip-wrapper) table ol {
   padding-left: 1em !important;
 }
-main table em {
+:is(main, #tooltip-wrapper) table em {
   font-style: italic !important;
 }
-main table strong {
+:is(main, #tooltip-wrapper) table strong {
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;
 }
-main table h5 + * {
+:is(main, #tooltip-wrapper) table h5 + * {
   margin-top: 0.1cm !important;
 }
-main table + * {
+:is(main, #tooltip-wrapper) table + * {
   margin-top: 0.325cm !important;
 }
-main table thead {
+:is(main, #tooltip-wrapper) table thead {
   display: table-row-group !important;
   font-weight: 800 !important;
 }
-main table thead th {
+:is(main, #tooltip-wrapper) table thead th {
   padding: 0 1.5px !important;
   vertical-align: bottom !important;
 }
-main table tbody tr td {
+:is(main, #tooltip-wrapper) table tbody tr td {
   padding: 0 1.5px !important;
 }
-main table tbody tr:nth-child(odd) {
+:is(main, #tooltip-wrapper) table tbody tr:nth-child(odd) {
   background-color: var(--HB_Color_Accent) !important;
 }
-main .quote > p {
+:is(main, #tooltip-wrapper) .quote > p {
   font-style: italic !important;
   line-height: 0.54cm !important;
 }
-main .quote > p:first-child::first-line {
+:is(main, #tooltip-wrapper) .quote > p:first-child::first-line {
   font-size: 0.38cm !important;
   font-style: normal !important;
   font-variant: small-caps !important;
 }
-main .quote p + .attribution {
+:is(main, #tooltip-wrapper) .quote p + .attribution {
   margin-top: 0 !important;
 }
-main .quote .attribution {
+:is(main, #tooltip-wrapper) .quote .attribution {
   display: block !important;
   font-style: normal !important;
   line-height: 0.54cm !important;
   text-align: right !important;
 }
-main .quote .attribution::before {
+:is(main, #tooltip-wrapper) .quote .attribution::before {
   margin-right: 0.2em !important;
   content: "---" !important;
 }
-main .quote + * {
+:is(main, #tooltip-wrapper) .quote + * {
   margin-top: 0.54cm !important;
 }
-main .callout[data-callout="tip"] {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] {
   font-family: "ScalySansRemake" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
@@ -311,43 +375,44 @@ main .callout[data-callout="tip"] {
   border-image-outset: 9px 0px !important;
   box-shadow: 1px 4px 14px #888888 !important;
 }
-main .callout[data-callout="tip"] p,
-main .callout[data-callout="tip"] dl,
-main .callout[data-callout="tip"] ul,
-main .callout[data-callout="tip"] ol {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] p,
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] dl,
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] ul,
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] ol {
   line-height: 1.2em !important;
 }
-main .callout[data-callout="tip"] ul,
-main .callout[data-callout="tip"] ol {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] ul,
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] ol {
   padding-left: 1em !important;
 }
-main .callout[data-callout="tip"] em {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] em {
   font-style: italic !important;
 }
-main .callout[data-callout="tip"] strong {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] strong {
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;
 }
-main .callout[data-callout="tip"] h5 + * {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] h5 + * {
   margin-top: 0.1cm !important;
 }
-main :where(main .callout[data-callout="tip"]) {
+:is(main, #tooltip-wrapper)
+  :where(:is(main, #tooltip-wrapper) .callout[data-callout="tip"]) {
   margin-top: 9px !important;
 }
-main .callout[data-callout="tip"] + * {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] + * {
   margin-top: 0.45cm !important;
 }
-main .callout[data-callout="tip"] h5 {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] h5 {
   font-size: 0.375cm !important;
 }
-main .callout[data-callout="tip"] p {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] p {
   display: block !important;
   padding-bottom: 0px !important;
 }
-main .callout[data-callout="tip"] :last-child {
+:is(main, #tooltip-wrapper) .callout[data-callout="tip"] :last-child {
   margin-bottom: 0 !important;
 }
-main .callout[data-callout="note"] {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] {
   font-family: "ScalySansRemake" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
@@ -360,44 +425,45 @@ main .callout[data-callout="note"] {
   border-image-outset: 4px !important;
   box-shadow: 0 0 6px #faf7ea !important;
 }
-main .callout[data-callout="note"] p,
-main .callout[data-callout="note"] dl,
-main .callout[data-callout="note"] ul,
-main .callout[data-callout="note"] ol {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] p,
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] dl,
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] ul,
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] ol {
   line-height: 1.2em !important;
 }
-main .callout[data-callout="note"] ul,
-main .callout[data-callout="note"] ol {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] ul,
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] ol {
   padding-left: 1em !important;
 }
-main .callout[data-callout="note"] em {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] em {
   font-style: italic !important;
 }
-main .callout[data-callout="note"] strong {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] strong {
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;
 }
-main .callout[data-callout="note"] h5 + * {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] h5 + * {
   margin-top: 0.1cm !important;
 }
-main :where(main .callout[data-callout="note"]) {
+:is(main, #tooltip-wrapper)
+  :where(:is(main, #tooltip-wrapper) .callout[data-callout="note"]) {
   margin-top: 4px !important;
 }
-main .callout[data-callout="note"] + * {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] + * {
   margin-top: 0.45cm !important;
 }
-main .callout[data-callout="note"] h5 {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] h5 {
   font-size: 0.375cm !important;
 }
-main .callout[data-callout="note"] p {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] p {
   display: block !important;
   padding-bottom: 0px !important;
   line-height: 1.5em !important;
 }
-main .callout[data-callout="note"] :last-child {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"] :last-child {
   margin-bottom: 0 !important;
 }
-main .artist {
+:is(main, #tooltip-wrapper) .artist {
   position: absolute !important;
   width: auto !important;
   font-family: "WalterTurncoat" !important;
@@ -405,63 +471,63 @@ main .artist {
   color: var(--HB_Color_CaptionText) !important;
   text-align: center !important;
 }
-main .artist p,
-main .artist p + p {
+:is(main, #tooltip-wrapper) .artist p,
+:is(main, #tooltip-wrapper) .artist p + p {
   margin: unset !important;
   line-height: 1em !important;
   text-indent: unset !important;
 }
-main .artist h5 {
+:is(main, #tooltip-wrapper) .artist h5 {
   font-family: "WalterTurncoat" !important;
   font-size: 1.3em !important;
 }
-main .artist a {
+:is(main, #tooltip-wrapper) .artist a {
   color: inherit !important;
   text-decoration: unset !important;
 }
-main .artist a:hover {
+:is(main, #tooltip-wrapper) .artist a:hover {
   text-decoration: underline !important;
 }
-main .watermark {
+:is(main, #tooltip-wrapper) .watermark {
   color: black !important;
 }
-main .watercolor1 {
+:is(main, #tooltip-wrapper) .watercolor1 {
   --wc: url("/assets/watercolor/watercolor1.png") !important;
 }
-main .watercolor2 {
+:is(main, #tooltip-wrapper) .watercolor2 {
   --wc: url("/assets/watercolor/watercolor2.png") !important;
 }
-main .watercolor3 {
+:is(main, #tooltip-wrapper) .watercolor3 {
   --wc: url("/assets/watercolor/watercolor3.png") !important;
 }
-main .watercolor4 {
+:is(main, #tooltip-wrapper) .watercolor4 {
   --wc: url("/assets/watercolor/watercolor4.png") !important;
 }
-main .watercolor5 {
+:is(main, #tooltip-wrapper) .watercolor5 {
   --wc: url("/assets/watercolor/watercolor5.png") !important;
 }
-main .watercolor6 {
+:is(main, #tooltip-wrapper) .watercolor6 {
   --wc: url("/assets/watercolor/watercolor6.png") !important;
 }
-main .watercolor7 {
+:is(main, #tooltip-wrapper) .watercolor7 {
   --wc: url("/assets/watercolor/watercolor7.png") !important;
 }
-main .watercolor8 {
+:is(main, #tooltip-wrapper) .watercolor8 {
   --wc: url("/assets/watercolor/watercolor8.png") !important;
 }
-main .watercolor9 {
+:is(main, #tooltip-wrapper) .watercolor9 {
   --wc: url("/assets/watercolor/watercolor9.png") !important;
 }
-main .watercolor10 {
+:is(main, #tooltip-wrapper) .watercolor10 {
   --wc: url("/assets/watercolor/watercolor10.png") !important;
 }
-main .watercolor11 {
+:is(main, #tooltip-wrapper) .watercolor11 {
   --wc: url("/assets/watercolor/watercolor11.png") !important;
 }
-main .watercolor12 {
+:is(main, #tooltip-wrapper) .watercolor12 {
   --wc: url("/assets/watercolor/watercolor12.png") !important;
 }
-main .monster {
+:is(main, #tooltip-wrapper) .monster {
   font-family: "ScalySansRemake" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
@@ -469,27 +535,27 @@ main .monster {
   padding: 0px !important;
   margin-bottom: 0.325cm !important;
 }
-main .monster p,
-main .monster dl,
-main .monster ul,
-main .monster ol {
+:is(main, #tooltip-wrapper) .monster p,
+:is(main, #tooltip-wrapper) .monster dl,
+:is(main, #tooltip-wrapper) .monster ul,
+:is(main, #tooltip-wrapper) .monster ol {
   line-height: 1.2em !important;
 }
-main .monster ul,
-main .monster ol {
+:is(main, #tooltip-wrapper) .monster ul,
+:is(main, #tooltip-wrapper) .monster ol {
   padding-left: 1em !important;
 }
-main .monster em {
+:is(main, #tooltip-wrapper) .monster em {
   font-style: italic !important;
 }
-main .monster strong {
+:is(main, #tooltip-wrapper) .monster strong {
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;
 }
-main .monster h5 + * {
+:is(main, #tooltip-wrapper) .monster h5 + * {
   margin-top: 0.1cm !important;
 }
-main .monster.frame {
+:is(main, #tooltip-wrapper) .monster.frame {
   width: calc(100% + 0.32cm) !important;
   padding: 4px 2px !important;
   margin-right: -0.16cm !important;
@@ -503,21 +569,21 @@ main .monster.frame {
   border-image-outset: 0px 2px !important;
   box-shadow: 1px 4px 14px #888888 !important;
 }
-main .monster h2 {
+:is(main, #tooltip-wrapper) .monster h2 {
   margin: 0 !important;
   font-size: 0.62cm !important;
   line-height: 1em !important;
 }
-main .monster h2 + p {
+:is(main, #tooltip-wrapper) .monster h2 + p {
   margin-bottom: 0 !important;
   font-size: 0.304cm !important;
 }
-main .monster h3 {
+:is(main, #tooltip-wrapper) .monster h3 {
   font-family: "ScalySansSmallCapsRemake" !important;
   font-size: 0.45cm !important;
   border-bottom: 1.5px solid var(--HB_Color_HeaderText) !important;
 }
-main .monster hr {
+:is(main, #tooltip-wrapper) .monster hr {
   height: 6px !important;
   margin: 0.12cm 0 !important;
   visibility: visible !important;
@@ -525,20 +591,20 @@ main .monster hr {
   background-size: 100% 100% !important;
   border: none !important;
 }
-main .monster hr ~ :is(dl, p) {
+:is(main, #tooltip-wrapper) .monster hr ~ :is(dl, p) {
   color: var(--HB_Color_HeaderText) !important;
 }
-main .monster hr:last-of-type ~ :is(dl, p) {
+:is(main, #tooltip-wrapper) .monster hr:last-of-type ~ :is(dl, p) {
   color: inherit !important;
 }
-main .monster hr:last-of-type + * {
+:is(main, #tooltip-wrapper) .monster hr:last-of-type + * {
   margin-top: 0.325cm !important;
 }
-main .monster .bonus {
+:is(main, #tooltip-wrapper) .monster .bonus {
   float: right !important;
   padding-right: 0.5em !important;
 }
-main .monster hr + table:first-of-type {
+:is(main, #tooltip-wrapper) .monster hr + table:first-of-type {
   margin: 0 !important;
   column-span: none !important;
   color: var(--HB_Color_HeaderText) !important;
@@ -547,20 +613,20 @@ main .monster hr + table:first-of-type {
   border-image: none !important;
   -webkit-column-span: none !important;
 }
-main .monster hr + table:first-of-type tr {
+:is(main, #tooltip-wrapper) .monster hr + table:first-of-type tr {
   background-color: transparent !important;
 }
-main .monster hr + table:first-of-type td,
-main .monster hr + table:first-of-type th {
+:is(main, #tooltip-wrapper) .monster hr + table:first-of-type td,
+:is(main, #tooltip-wrapper) .monster hr + table:first-of-type th {
   padding: 0px !important;
 }
-main .monster :is(ul, ol) + p {
+:is(main, #tooltip-wrapper) .monster :is(ul, ol) + p {
   text-indent: 0 !important;
 }
-main .monster :last-child {
+:is(main, #tooltip-wrapper) .monster :last-child {
   margin-bottom: 0 !important;
 }
-main .monster.wide {
+:is(main, #tooltip-wrapper) .monster.wide {
   column-count: 2 !important;
   column-fill: balance !important;
   column-gap: 0.9cm !important;
@@ -573,38 +639,38 @@ main .monster.wide {
   -moz-column-gap: 0.9cm !important;
 }
 @supports (-webkit-touch-callout: none) {
-  main main .monster.frame {
+  :is(main, #tooltip-wrapper) :is(main, #tooltip-wrapper) .monster.frame {
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
 }
-main::after {
-  position: absolute !important;
-  bottom: 0px !important;
-  left: 0px !important;
-  z-index: 100 !important;
-  width: 100% !important;
-  height: 50px !important;
-  content: "" !important;
-  background-image: url("/assets/PHB_footerAccent.png") !important;
-  background-size: cover !important;
+:is(main, #tooltip-wrapper)::after {
+  // position: absolute !important;
+  // bottom: 0px !important;
+  // left: 0px !important;
+  // z-index: 100 !important;
+  // width: 100% !important;
+  // height: 50px !important;
+  // content: "" !important;
+  // background-image: url("/assets/PHB_footerAccent.png") !important;
+  // background-size: cover !important;
 }
-main:nth-child(even)::after {
+:is(main, #tooltip-wrapper):nth-child(even)::after {
   transform: scaleX(-1) !important;
 }
-main:nth-child(even) mainNumber {
+:is(main, #tooltip-wrapper):nth-child(even) :is(main, #tooltip-wrapper)Number {
   left: 2px !important;
 }
-main:nth-child(even) .footnote {
+:is(main, #tooltip-wrapper):nth-child(even) .footnote {
   left: 80px !important;
   text-align: left !important;
 }
-main mainNumber {
+:is(main, #tooltip-wrapper) :is(main, #tooltip-wrapper)Number {
   right: 2px !important;
   bottom: 22px !important;
   color: var(--HB_Color_Footnotes) !important;
 }
-main .footnote {
+:is(main, #tooltip-wrapper) .footnote {
   position: absolute !important;
   right: 80px !important;
   bottom: 32px !important;
@@ -614,14 +680,14 @@ main .footnote {
   color: var(--HB_Color_Footnotes) !important;
   text-align: right !important;
 }
-main code {
+:is(main, #tooltip-wrapper) code {
   padding: 0px 4px !important;
   font-size: 0.325cm !important;
   color: #58180d !important;
   background-color: #faf7ea !important;
   border-radius: 4px !important;
 }
-main pre code {
+:is(main, #tooltip-wrapper) pre code {
   padding: 0.15cm !important;
   margin-bottom: 2px !important;
   border-style: solid !important;
@@ -631,61 +697,61 @@ main pre code {
   border-image-width: 10px !important;
   border-image-outset: 2px !important;
 }
-main :where(main pre code) {
+:is(main, #tooltip-wrapper) :where(:is(main, #tooltip-wrapper) pre code) {
   margin-top: 2px !important;
 }
-main pre code + * {
+:is(main, #tooltip-wrapper) pre code + * {
   margin-top: 0.325cm !important;
 }
-main hr {
+:is(main, #tooltip-wrapper) hr {
   margin: 0px !important;
   visibility: hidden !important;
 }
-main table + p {
+:is(main, #tooltip-wrapper) table + p {
   text-indent: 1em !important;
 }
-main ul ul,
-main ol ol,
-main ul ol,
-main ol ul {
+:is(main, #tooltip-wrapper) ul ul,
+:is(main, #tooltip-wrapper) ol ol,
+:is(main, #tooltip-wrapper) ul ol,
+:is(main, #tooltip-wrapper) ol ul {
   margin-bottom: 0px !important;
   margin-left: 1.5em !important;
 }
-main .spellList {
+:is(main, #tooltip-wrapper) .spellList {
   font-family: "ScalySansRemake" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
   column-count: 2 !important;
 }
-main .spellList p,
-main .spellList dl,
-main .spellList ul,
-main .spellList ol {
+:is(main, #tooltip-wrapper) .spellList p,
+:is(main, #tooltip-wrapper) .spellList dl,
+:is(main, #tooltip-wrapper) .spellList ul,
+:is(main, #tooltip-wrapper) .spellList ol {
   line-height: 1.2em !important;
 }
-main .spellList ul,
-main .spellList ol {
+:is(main, #tooltip-wrapper) .spellList ul,
+:is(main, #tooltip-wrapper) .spellList ol {
   padding-left: 1em !important;
 }
-main .spellList em {
+:is(main, #tooltip-wrapper) .spellList em {
   font-style: italic !important;
 }
-main .spellList strong {
+:is(main, #tooltip-wrapper) .spellList strong {
   font-weight: 800 !important;
   letter-spacing: -0.02em !important;
 }
-main .spellList h5 + * {
+:is(main, #tooltip-wrapper) .spellList h5 + * {
   margin-top: 0.1cm !important;
 }
-main .spellList ul + h5 {
+:is(main, #tooltip-wrapper) .spellList ul + h5 {
   margin-top: 15px !important;
 }
-main .spellList p,
-main .spellList ul {
+:is(main, #tooltip-wrapper) .spellList p,
+:is(main, #tooltip-wrapper) .spellList ul {
   font-size: 0.352cm !important;
   line-height: 1.265em !important;
 }
-main .spellList ul {
+:is(main, #tooltip-wrapper) .spellList ul {
   padding-left: 1em !important;
   margin-bottom: 0.5em !important;
   text-indent: -1em !important;
@@ -694,13 +760,13 @@ main .spellList ul {
   page-break-inside: auto !important;
   break-inside: auto !important;
 }
-main .spellList.wide {
+:is(main, #tooltip-wrapper) .spellList.wide {
   column-count: 4 !important;
 }
-main .classTable th[colspan]:not([rowspan]) {
+:is(main, #tooltip-wrapper) .classTable th[colspan]:not([rowspan]) {
   white-space: nowrap !important;
 }
-main .classTable.frame {
+:is(main, #tooltip-wrapper) .classTable.frame {
   width: calc(100% + 0.2cm) !important;
   margin-top: 0.7cm !important;
   margin-right: -0.1cm !important;
@@ -716,16 +782,16 @@ main .classTable.frame {
   border-image-outset: 0.4cm 0.3cm !important;
   border-image-repeat: stretch !important;
 }
-main .classTable.frame.wide:first-child {
+:is(main, #tooltip-wrapper) .classTable.frame.wide:first-child {
   margin-top: 0.12cm !important;
 }
-main .classTable.frame + * {
+:is(main, #tooltip-wrapper) .classTable.frame + * {
   margin-top: 0 !important;
 }
-main .classTable.decoration {
+:is(main, #tooltip-wrapper) .classTable.decoration {
   position: relative !important;
 }
-main .classTable.decoration::before {
+:is(main, #tooltip-wrapper) .classTable.decoration::before {
   position: absolute !important;
   top: 50% !important;
   left: 50% !important;
@@ -741,22 +807,22 @@ main .classTable.decoration::before {
   background-size: contain, contain !important;
   transform: translateY(-50%) translateX(-50%) !important;
 }
-main .classTable.decoration.wide::before {
+:is(main, #tooltip-wrapper) .classTable.decoration.wide::before {
   width: calc(100% + 3.3cm) !important;
   height: 7.75cm !important;
   background-position: left, right !important;
 }
-main .classTable h5 + table {
+:is(main, #tooltip-wrapper) .classTable h5 + table {
   margin-top: 0.2cm !important;
 }
-main:has(.frontCover) {
+:is(main, #tooltip-wrapper):has(.frontCover) {
   columns: 1 !important;
   text-align: center !important;
 }
-main:has(.frontCover)::after {
+:is(main, #tooltip-wrapper):has(.frontCover)::after {
   display: none !important;
 }
-main:has(.frontCover) h1 {
+:is(main, #tooltip-wrapper):has(.frontCover) h1 {
   margin-top: 1.2cm !important;
   margin-bottom: 0 !important;
   font-family: "NodestoCapsCondensed" !important;
@@ -769,7 +835,7 @@ main:has(.frontCover) h1 {
   -webkit-text-stroke: 0.2cm black !important;
   paint-order: stroke !important;
 }
-main:has(.frontCover) h2 {
+:is(main, #tooltip-wrapper):has(.frontCover) h2 {
   font-family: "NodestoCapsCondensed" !important;
   font-size: 0.85cm !important;
   font-weight: normal !important;
@@ -778,7 +844,7 @@ main:has(.frontCover) h2 {
   -webkit-text-stroke: 0.14cm black !important;
   paint-order: stroke !important;
 }
-main:has(.frontCover) hr {
+:is(main, #tooltip-wrapper):has(.frontCover) hr {
   position: relative !important;
   display: block !important;
   width: 12cm !important;
@@ -790,7 +856,7 @@ main:has(.frontCover) hr {
   background-size: 100% 100% !important;
   border: none !important;
 }
-main:has(.frontCover) .banner {
+:is(main, #tooltip-wrapper):has(.frontCover) .banner {
   position: absolute !important;
   bottom: 4.2cm !important;
   left: 0 !important;
@@ -810,7 +876,7 @@ main:has(.frontCover) .banner {
   background-image: url("/assets/coverPageBanner.svg") !important;
   filter: drop-shadow(2px 2px 2px black) !important;
 }
-main:has(.frontCover) .footnote {
+:is(main, #tooltip-wrapper):has(.frontCover) .footnote {
   position: absolute !important;
   right: 0 !important;
   bottom: 1.3cm !important;
@@ -825,25 +891,25 @@ main:has(.frontCover) .footnote {
   -webkit-text-stroke: 0.1cm black !important;
   paint-order: stroke !important;
 }
-main:has(.frontCover) .logo {
+:is(main, #tooltip-wrapper):has(.frontCover) .logo {
   position: absolute !important;
   top: 0.5cm !important;
   right: 0 !important;
   left: 0 !important;
   filter: drop-shadow(0 0 0.075cm black) !important;
 }
-main:has(.frontCover) .logo img {
+:is(main, #tooltip-wrapper):has(.frontCover) .logo img {
   width: 100% !important;
   height: 2cm !important;
 }
-main:has(.insideCover) {
+:is(main, #tooltip-wrapper):has(.insideCover) {
   columns: 1 !important;
   text-align: center !important;
 }
-main:has(.insideCover)::after {
+:is(main, #tooltip-wrapper):has(.insideCover)::after {
   display: none !important;
 }
-main:has(.insideCover) h1 {
+:is(main, #tooltip-wrapper):has(.insideCover) h1 {
   margin-top: 1.2cm !important;
   margin-bottom: 0 !important;
   font-family: "NodestoCapsCondensed" !important;
@@ -852,13 +918,13 @@ main:has(.insideCover) h1 {
   line-height: 1.785cm !important;
   text-transform: uppercase !important;
 }
-main:has(.insideCover) h2 {
+:is(main, #tooltip-wrapper):has(.insideCover) h2 {
   font-family: "NodestoCapsCondensed" !important;
   font-size: 0.85cm !important;
   font-weight: normal !important;
   letter-spacing: 0.5cm !important;
 }
-main:has(.insideCover) hr {
+:is(main, #tooltip-wrapper):has(.insideCover) hr {
   position: relative !important;
   display: block !important;
   width: 12cm !important;
@@ -869,29 +935,29 @@ main:has(.insideCover) hr {
   background-size: 100% 100% !important;
   border: none !important;
 }
-main:has(.insideCover) .logo {
+:is(main, #tooltip-wrapper):has(.insideCover) .logo {
   position: absolute !important;
   right: 0 !important;
   bottom: 1cm !important;
   left: 0 !important;
   height: 2cm !important;
 }
-main:has(.insideCover) .logo img {
+:is(main, #tooltip-wrapper):has(.insideCover) .logo img {
   width: 100% !important;
   height: 2cm !important;
 }
-main:has(.backCover) {
+:is(main, #tooltip-wrapper):has(.backCover) {
   padding: 2.25cm 1.3cm 2cm 1.3cm !important;
   color: #ffffff !important;
   columns: 1 !important;
 }
-main:has(.backCover)::after {
+:is(main, #tooltip-wrapper):has(.backCover)::after {
   display: none !important;
 }
-main:has(.backCover) .columnWrapper {
+:is(main, #tooltip-wrapper):has(.backCover) .columnWrapper {
   width: 7.6cm !important;
 }
-main:has(.backCover) .backCover {
+:is(main, #tooltip-wrapper):has(.backCover) .backCover {
   position: absolute !important;
   inset: 0 !important;
   z-index: -1 !important;
@@ -900,10 +966,10 @@ main:has(.backCover) .backCover {
   background-repeat: no-repeat !important;
   background-size: contain !important;
 }
-main:has(.backCover) .blank {
+:is(main, #tooltip-wrapper):has(.backCover) .blank {
   height: 1.4em !important;
 }
-main:has(.backCover) h1 {
+:is(main, #tooltip-wrapper):has(.backCover) h1 {
   margin-bottom: 0.3cm !important;
   font-family: "NodestoCapsCondensed" !important;
   font-size: 1.35cm !important;
@@ -911,17 +977,17 @@ main:has(.backCover) h1 {
   color: #ed1c24 !important;
   text-align: center !important;
 }
-main:has(.backCover) h1 + p::first-line,
-main:has(.backCover) h1 + p::first-letter {
+:is(main, #tooltip-wrapper):has(.backCover) h1 + p::first-line,
+:is(main, #tooltip-wrapper):has(.backCover) h1 + p::first-letter {
   all: unset !important;
 }
-main:has(.backCover) img {
+:is(main, #tooltip-wrapper):has(.backCover) img {
   position: absolute !important;
   top: 0px !important;
   z-index: -2 !important;
   height: 100% !important;
 }
-main:has(.backCover) hr {
+:is(main, #tooltip-wrapper):has(.backCover) hr {
   width: 4.5cm !important;
   height: 0.53cm !important;
   margin-top: 1.1cm !important;
@@ -932,16 +998,16 @@ main:has(.backCover) hr {
   background-size: 100% 100% !important;
   border: none !important;
 }
-main:has(.backCover) p {
+:is(main, #tooltip-wrapper):has(.backCover) p {
   font-family: "Overpass" !important;
   font-size: 0.332cm !important;
   line-height: 0.35cm !important;
 }
-main:has(.backCover) hr + p {
+:is(main, #tooltip-wrapper):has(.backCover) hr + p {
   margin-top: 0.6cm !important;
   text-align: center !important;
 }
-main:has(.backCover) .logo {
+:is(main, #tooltip-wrapper):has(.backCover) .logo {
   position: absolute !important;
   bottom: 2cm !important;
   left: 1.2cm !important;
@@ -949,13 +1015,13 @@ main:has(.backCover) .logo {
   width: 7.6cm !important;
   height: 1.5cm !important;
 }
-main:has(.backCover) .logo img {
+:is(main, #tooltip-wrapper):has(.backCover) .logo img {
   position: relative !important;
   z-index: 0 !important;
   width: 100% !important;
   height: 1.5cm !important;
 }
-main:has(.backCover) .logo p {
+:is(main, #tooltip-wrapper):has(.backCover) .logo p {
   position: relative !important;
   width: 100% !important;
   font-family: "NodestoCapsWide" !important;
@@ -966,12 +1032,12 @@ main:has(.backCover) .logo p {
   text-align: center !important;
   text-indent: 0 !important;
 }
-main:has(.partCover) {
+:is(main, #tooltip-wrapper):has(.partCover) {
   padding-top: 0 !important;
   text-align: center !important;
   columns: 1 !important;
 }
-main:has(.partCover) .partCover {
+:is(main, #tooltip-wrapper):has(.partCover) .partCover {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -981,7 +1047,7 @@ main:has(.partCover) .partCover {
   background-repeat: no-repeat !important;
   background-size: 100% !important;
 }
-main:has(.partCover) h1 {
+:is(main, #tooltip-wrapper):has(.partCover) h1 {
   position: relative !important;
   margin-top: 0.4cm !important;
   font-family: "NodestoCapsCondensed" !important;
@@ -989,7 +1055,7 @@ main:has(.partCover) h1 {
   text-align: center !important;
   text-transform: uppercase !important;
 }
-main:has(.partCover) h2 {
+:is(main, #tooltip-wrapper):has(.partCover) h2 {
   position: relative !important;
   margin-top: -0.7em !important;
   margin-right: auto !important;
@@ -1001,9 +1067,9 @@ main:has(.partCover) h2 {
 h4,
 h5,
 h6,
-main:has(.frontCover),
-main:has(.backCover),
-main:has(.insideCover),
+:is(main, #tooltip-wrapper):has(.frontCover),
+:is(main, #tooltip-wrapper):has(.backCover),
+:is(main, #tooltip-wrapper):has(.insideCover),
 .monster,
 .noToC,
 .toc {
@@ -1060,61 +1126,61 @@ main:has(.insideCover),
 .tocExcludeH6 h6 {
   --TOC: exclude !important;
 }
-main:has(.partCover) {
+:is(main, #tooltip-wrapper):has(.partCover) {
   --TOC: exclude !important;
 }
-main:has(.partCover) h1 {
+:is(main, #tooltip-wrapper):has(.partCover) h1 {
   --TOC: include !important;
 }
-main:has(.toc)::after {
+:is(main, #tooltip-wrapper):has(.toc)::after {
   display: none !important;
 }
-main .toc {
+:is(main, #tooltip-wrapper) .toc {
   -webkit-column-break-inside: avoid !important;
   page-break-inside: avoid !important;
   break-inside: avoid !important;
 }
-main .toc h1 {
+:is(main, #tooltip-wrapper) .toc h1 {
   margin-bottom: 0.3cm !important;
   text-align: center !important;
 }
-main .toc a {
+:is(main, #tooltip-wrapper) .toc a {
   display: inline !important;
   color: inherit !important;
   text-decoration: none !important;
 }
-main .toc a:hover {
+:is(main, #tooltip-wrapper) .toc a:hover {
   text-decoration: underline !important;
 }
-main .toc h4 {
+:is(main, #tooltip-wrapper) .toc h4 {
   margin-top: 0.2cm !important;
   line-height: 0.4cm !important;
 }
-main .toc h4 + ul li {
+:is(main, #tooltip-wrapper) .toc h4 + ul li {
   line-height: 1.2em !important;
 }
-main .toc ul {
+:is(main, #tooltip-wrapper) .toc ul {
   padding-left: 0 !important;
   margin-top: 0 !important;
   list-style-type: none !important;
 }
-main .toc ul a {
+:is(main, #tooltip-wrapper) .toc ul a {
   display: flex !important;
   flex-flow: row nowrap !important;
   justify-content: space-between !important;
   width: 100% !important;
 }
-main .toc ul li + li h3 {
+:is(main, #tooltip-wrapper) .toc ul li + li h3 {
   margin-top: 0.26cm !important;
   line-height: 1em !important;
 }
-main .toc ul h3 span:first-child::after {
+:is(main, #tooltip-wrapper) .toc ul h3 span:first-child::after {
   border: none !important;
 }
-main .toc ul span {
+:is(main, #tooltip-wrapper) .toc ul span {
   display: contents !important;
 }
-main .toc ul span:first-child::after {
+:is(main, #tooltip-wrapper) .toc ul span:first-child::after {
   bottom: 0.08cm !important;
   flex: 1 !important;
   margin-right: 0.16cm !important;
@@ -1123,7 +1189,7 @@ main .toc ul span:first-child::after {
   content: "" !important;
   border-bottom: 0.05cm dotted #000000 !important;
 }
-main .toc ul span:last-child {
+:is(main, #tooltip-wrapper) .toc ul span:last-child {
   display: inline-block !important;
   align-self: flex-end !important;
   font-family: "BookInsanityRemake" !important;
@@ -1131,10 +1197,10 @@ main .toc ul span:last-child {
   font-weight: normal !important;
   color: #000000 !important;
 }
-main .toc ul ul {
+:is(main, #tooltip-wrapper) .toc ul ul {
   margin-left: 1em !important;
 }
-main .toc.wide {
+:is(main, #tooltip-wrapper) .toc.wide {
   column-count: 2 !important;
   column-fill: balance !important;
   column-gap: 0.9cm !important;
@@ -1146,42 +1212,42 @@ main .toc.wide {
   -webkit-column-gap: 0.9cm !important;
   -moz-column-gap: 0.9cm !important;
 }
-main .toc.wide li {
+:is(main, #tooltip-wrapper) .toc.wide li {
   break-inside: auto !important;
 }
-main dl {
+:is(main, #tooltip-wrapper) dl {
   line-height: 1.25em !important;
 }
-main dl + * {
+:is(main, #tooltip-wrapper) dl + * {
   margin-top: 0.17cm !important;
 }
-main p + dl {
+:is(main, #tooltip-wrapper) p + dl {
   margin-top: 0.17cm !important;
 }
-main dt {
+:is(main, #tooltip-wrapper) dt {
   margin-right: 5px !important;
   margin-left: -1em !important;
 }
-main .wide {
+:is(main, #tooltip-wrapper) .wide {
   margin-bottom: 0.325cm !important;
 }
-main h1 + * {
+:is(main, #tooltip-wrapper) h1 + * {
   margin-top: 0 !important;
 }
-main .callout[data-callout="note"].wide + * {
+:is(main, #tooltip-wrapper) .callout[data-callout="note"].wide + * {
   margin-top: 0 !important;
 }
-main .runeTable {
+:is(main, #tooltip-wrapper) .runeTable {
   margin-block: 0.7cm !important;
 }
-main .runeTable table {
+:is(main, #tooltip-wrapper) .runeTable table {
   font-family: inherit !important;
 }
-main .runeTable table tbody tr {
+:is(main, #tooltip-wrapper) .runeTable table tbody tr {
   background: unset !important;
 }
-main .runeTable table th,
-main .runeTable table td {
+:is(main, #tooltip-wrapper) .runeTable table th,
+:is(main, #tooltip-wrapper) .runeTable table td {
   width: 1.3cm !important;
   height: 1.3cm !important;
   font-weight: normal !important;
@@ -1189,14 +1255,14 @@ main .runeTable table td {
   vertical-align: middle !important;
   outline: 1px solid #000000 !important;
 }
-main .runeTable table th {
+:is(main, #tooltip-wrapper) .runeTable table th {
   font-family: "BookInsanityRemake" !important;
   font-size: 0.45cm !important;
 }
-main .runeTable table td {
+:is(main, #tooltip-wrapper) .runeTable table td {
   font-size: 0.7cm !important;
 }
-main .runeTable.frame {
+:is(main, #tooltip-wrapper) .runeTable.frame {
   border: initial !important;
   border-style: solid !important;
   border-image-source: url("/assets/scriptBorder.png") !important;
@@ -1205,18 +1271,18 @@ main .runeTable.frame {
   border-image-outset: 0.45cm 0.35cm 0.4cm 0.4cm !important;
   border-image-repeat: stretch !important;
 }
-main .index {
+:is(main, #tooltip-wrapper) .index {
   font-size: 0.218cm !important;
 }
-main .index ul ul {
+:is(main, #tooltip-wrapper) .index ul ul {
   margin: 0 !important;
 }
-main .index ul {
+:is(main, #tooltip-wrapper) .index ul {
   padding-left: 0 !important;
   text-indent: 0 !important;
   list-style-type: none !important;
 }
-main .index > ul > li {
+:is(main, #tooltip-wrapper) .index > ul > li {
   padding-left: 1.5em !important;
   text-indent: -1.5em !important;
 }
