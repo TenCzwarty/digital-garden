@@ -14,9 +14,9 @@
 - Aleja Krzyży
 
 ### Świat
-- [[7 Task/publish/pl/1. Świat/1. Kosmologia/1. Planeta\|Planeta]]
-- [[7 Task/publish/pl/1. Świat/1. Kosmologia/2. Księżyce\|Księżyce]]
-- [[7 Task/publish/pl/1. Świat/1. Kosmologia/3. Gwiazdy\|Gwiazdy]]
+- [[7 Task/publish/pl/I. Świat/I. Kosmologia/I. System/I. Planeta\|I. Planeta]]
+- [[7 Task/publish/pl/I. Świat/I. Kosmologia/I. System/II. Księżyce\|II. Księżyce]]
+- [[7 Task/publish/pl/I. Świat/I. Kosmologia/I. System/III. Gwiazdy\|Gwiazdy]]
 
 ## Dla Mistrza Gry
 > [!NOTE] Uwaga na spojlery
