@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-task/context/rpg/digital-garden/pl/witaj-w-amazji/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/7-task/context/rpg/digital-garden/pl/witaj-w-amazji/","tags":["gardenEntry"],"dg-note-properties":{}}
 ---
 
 
@@ -14,9 +14,9 @@
 - Aleja Krzyży
 
 ### Świat
-- [[7 Task/context/RPG/digital-garden/PL/01. Świat/01. Kosmologia/01. System/01. Planeta\|01. Planeta]]
-- [[7 Task/context/RPG/digital-garden/PL/01. Świat/01. Kosmologia/01. System/02. Księżyce\|02. Księżyce]]
-- [[7 Task/context/RPG/digital-garden/PL/01. Świat/01. Kosmologia/01. System/03. Gwiazdy\|Gwiazdy]]
+- [[7 Task/context/RPG/digital-garden/PL/01. Kosmologia/01. System/01. Planeta/01. Planeta\|01. Planeta]]
+- [[7 Task/context/RPG/digital-garden/PL/01. Kosmologia/01. System/02. Księżyce/02. Księżyce\|02. Księżyce]]
+- [[7 Task/context/RPG/digital-garden/PL/01. Kosmologia/01. System/03. Gwiazdy/03. Gwiazdy\|Gwiazdy]]
 
 ## Dla Mistrza Gry
 > [!NOTE] Uwaga na spojlery
