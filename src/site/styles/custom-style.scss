@@ -62,7 +62,7 @@ aside div.backlinks {
   background-color: #faf7ea !important;
   border-style: solid !important;
   border-width: 7px !important;
-  border-image: url("https://homebrewery.naturalcrit.com/assets/descriptiveBorder.png")
+  border-image: url("/assets/descriptiveBorder.png")
     12 stretch !important;
   border-image-outset: 4px !important;
   box-shadow: 0 0 6px #faf7ea !important;
@@ -186,7 +186,7 @@ body iframe {
 // DND 5E STYLES FROM HOMEBREWERY
 body,
 #tooltip-wrapper {
-  background-image: url("https://homebrewery.naturalcrit.com/assets/parchmentBackground.jpg") !important;
+  background-image: url("/assets/parchmentBackground.jpg") !important;
 }
 :is(main, #tooltip-wrapper) {
   font-size: 0.34cm !important;
@@ -376,7 +376,7 @@ body,
   background-color: var(--HB_Color_Accent) !important;
   border-style: solid !important;
   border-width: 1px !important;
-  border-image: url("https://homebrewery.naturalcrit.com/assets/noteBorder.png")
+  border-image: url("/assets/noteBorder.png")
     12 stretch !important;
   border-image-width: 11px !important;
   border-image-outset: 9px 0px !important;
@@ -427,7 +427,7 @@ body,
   background-color: #faf7ea !important;
   border-style: solid !important;
   border-width: 7px !important;
-  border-image: url("https://homebrewery.naturalcrit.com/assets/descriptiveBorder.png")
+  border-image: url("/assets/descriptiveBorder.png")
     12 stretch !important;
   border-image-outset: 4px !important;
   box-shadow: 0 0 6px #faf7ea !important;
