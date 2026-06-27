@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-task/context/rpg/digital-garden/pl/witaj-w-amazji/","tags":["gardenEntry"],"dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"digital-garden/digital-garden/PL/Witaj w Amazji.md","permalink":"/digital-garden/digital-garden/pl/witaj-w-amazji/","tags":["gardenEntry"],"dg-note-properties":{}}
 ---
 
 

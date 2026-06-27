@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/7-task/context/rpg/digital-garden/en/welcome-to-amasia/","dg-note-properties":{}}
+{"dg-publish":true,"dg-path":"digital-garden/digital-garden/EN/Welcome to Amasia.md","permalink":"/digital-garden/digital-garden/en/welcome-to-amasia/","dg-note-properties":{}}
 ---
 
 
