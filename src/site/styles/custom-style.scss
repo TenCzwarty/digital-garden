@@ -15,13 +15,31 @@
 
   --background-primary: #faf7ea;
   --background-secondary: #faf7ea;
-  --text-normal: #58180d;
+  --text-normal: #000000;
   --text-accent: #58180d;
 
   --callout-blend-mode: none;
   --callout-border-opacity: 0;
   --callout-padding: 0px;
   --callout-radius: 0px;
+}
+
+// Override Minimal theme's .theme-light palette with parchment/D&D colors.
+// The theme derives all colors from these base vars, so overriding them here
+// cascades through backgrounds, borders, muted text, accents, icons, etc.
+.theme-light {
+  --bg1: #faf7ea;
+  --bg2: #eee5ce;
+  --bg3: rgba(192, 173, 106, 0.12);
+  --tx1: #000000;
+  --tx2: #766649;
+  --tx3: #a89b7a;
+  --ax1: #58180d;
+  --ax2: #3d0d06;
+  --ax3: #7b1d10;
+  --ui1: #c0ad6a;
+  --ui2: #a08950;
+  --ui3: #8a6b3a;
 }
 
 // RESET
@@ -162,6 +180,7 @@ body {
   --callout-color: 0, 0, 0;
   --callout-icon: unset;
   background-color: unset;
+  mix-blend-mode: normal !important;
 }
 main.content {
   max-width: 660px;
@@ -194,9 +213,11 @@ body,
 :is(main, #tooltip-wrapper) p {
   line-height: 1.25em !important;
 }
-:is(main, #tooltip-wrapper) p + *,
+:is(main, #tooltip-wrapper) p + * {
+  margin-top: 0.45cm !important;
+}
 :is(main, #tooltip-wrapper) .table-wrapper + * {
-  margin-top: 0.325cm !important;
+  margin-top: 0 !important;
 }
 :is(main, #tooltip-wrapper) p + p {
   margin-top: 0 !important;
@@ -230,7 +251,7 @@ body,
   color: var(--HB_Color_HeaderText) !important;
 }
 :is(main, #tooltip-wrapper) h1 {
-  margin-bottom: 0.28cm !important;
+  margin-bottom: 0.5cm !important;
   column-span: all !important;
   font-size: 0.89cm !important;
   line-height: 1em !important;
@@ -263,6 +284,9 @@ body,
 :is(main, #tooltip-wrapper) h1 + p::first-line {
   font-variant: small-caps !important;
 }
+:is(main, #tooltip-wrapper) * + h2 {
+  margin-top: 0.6cm !important;
+}
 :is(main, #tooltip-wrapper) h2 {
   font-size: 0.75cm !important;
   line-height: 0.988em !important;
@@ -273,20 +297,20 @@ body,
   border-bottom: 2px solid var(--HB_Color_HeaderUnderline) !important;
 }
 :is(main, #tooltip-wrapper) h3 + * {
-  margin-top: 0.17cm !important;
+  margin-top: 0.25cm !important;
 }
 :is(main, #tooltip-wrapper) * + h3 {
-  margin-top: 0.155cm !important;
+  margin-top: 0.45cm !important;
 }
 :is(main, #tooltip-wrapper) h4 {
   font-size: 0.458cm !important;
   line-height: 0.971em !important;
 }
 :is(main, #tooltip-wrapper) h4 + * {
-  margin-top: 0.09cm !important;
+  margin-top: 0.15cm !important;
 }
 :is(main, #tooltip-wrapper) * + h4 {
-  margin-top: 0.235cm !important;
+  margin-top: 0.35cm !important;
 }
 :is(main, #tooltip-wrapper) h5 {
   font-family: "ScalySansSmallCapsRemake" !important;
@@ -296,11 +320,15 @@ body,
 :is(main, #tooltip-wrapper) h5 + * {
   margin-top: 0.2cm !important;
 }
+:is(main, #tooltip-wrapper) * + h5 {
+  margin-top: 0.3cm !important;
+}
 :is(main, #tooltip-wrapper) table {
   font-family: "" EB Garamond "" !important;
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
   line-height: 16px !important;
+  margin: 0 !important;
 }
 :is(main, #tooltip-wrapper) table p,
 :is(main, #tooltip-wrapper) table dl,
@@ -323,7 +351,7 @@ body,
   margin-top: 0.1cm !important;
 }
 :is(main, #tooltip-wrapper) table + * {
-  margin-top: 0.325cm !important;
+  margin-top: 0 !important;
 }
 :is(main, #tooltip-wrapper) table thead {
   display: table-row-group !important;
@@ -424,13 +452,13 @@ body,
   font-size: 0.318cm !important;
   line-height: 1.2em !important;
   padding: 0.1em !important;
-  background-color: #faf7ea !important;
+  background-color: var(--bg1) !important;
   border-style: solid !important;
   border-width: 7px !important;
   border-image: url("/assets/descriptiveBorder.png")
     12 stretch !important;
   border-image-outset: 4px !important;
-  box-shadow: 0 0 6px #faf7ea !important;
+  box-shadow: 0 0 6px var(--bg1) !important;
 }
 :is(main, #tooltip-wrapper) .callout[data-callout="note"] p,
 :is(main, #tooltip-wrapper) .callout[data-callout="note"] dl,
